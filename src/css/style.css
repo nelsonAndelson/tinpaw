@@ -1,0 +1,76 @@
+:root {
+  --subtle-gray: #dce1e7;
+  --white: #fff;
+  --font-family: " Roboto ", sans-serif;
+}
+
+body,
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family);
+}
+
+header {
+  padding: 1rem;
+  justify-content: space-between;
+}
+header img {
+  width: 5rem;
+  height: 2.5em;
+}
+header i {
+  font-size: 2.5rem;
+  color: var(--subtle-gray);
+}
+.card-body {
+  position: relative;
+}
+.card-body img {
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.card-body-footer {
+  position: absolute;
+  bottom: 1em;
+  left: 0.5em;
+  color: var(--white);
+  font-size: 1.2rem;
+}
+
+.card-body-footer p {
+  color: var(--subtle-gray);
+}
+
+footer {
+  justify-content: center;
+  gap: 1em;
+}
+
+footer button {
+  margin-top: 1em;
+  padding: 1.3em;
+  border-radius: 100%;
+  border: none;
+  background-color: var(--white);
+  box-shadow: 0px 10px 20px var(--subtle-gray);
+  cursor: pointer;
+}
+
+footer button:first-child:hover {
+    background-color: #FFE7EF;
+    box-shadow: 0px 10px 20px #EDD9DF;
+}
+/* Utils */
+
+.flex {
+  display: flex;
+  flex-direction: row;
+}
+
+.container {
+  max-width: 480px;
+  margin: 0 auto;
+}

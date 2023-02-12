@@ -2,12 +2,45 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=\, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="node_modules/@fortawesome/fontawesome-free/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <title>TinPaw</title>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
+    <main class="card container">
+      <header class="card-header flex">
+        <i class="fa-solid fa-user"></i>
+        <div class="logo"><img src="./public/images/logo.png" alt="" /></div>
+        <i class="fa-solid fa-comment"></i>
+      </header>
+
+      <section class="card-body">
+        <img src="./public/images/dog-bella.jpg" alt="dog-bella" />
+        <div class="card-body-footer">
+          <h3>Teddy, 30</h3>
+          <p>How are you doin?</p>
+        </div>
+      </section>
+
+      <footer class="flex">
+        <button>
+          <img src="./public/images/icon-cross.png" alt="cross-icon" />
+        </button>
+        <button>
+          <img src="./public/images/icon-heart.png" alt="heart-icon" />
+        </button>
+      </footer>
+    </main>
   </body>
 </html>
